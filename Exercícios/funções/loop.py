@@ -53,6 +53,20 @@ def contar_aprovados(notas: list):
             count+=1 
     return count
     
+def filtrar_palavras_curtas(palavras: lista, tamanho_maximo: int):
+    filtro = [] 
+    for palavra in palavras:
+        if len(palavra) <= tamanho_maximo:
+            filtro.append(palavra) 
+    return filtro        
+
+
+
+
+
+
+
+
 
 
 
@@ -82,5 +96,6 @@ if __name__=="__main__":
     alunos = contar_aprovados([8.5, 5.0, 7.0, 6.5,9.0])
     print(alunos)
 
-
+    palavras_curtas = filtrar_palavras_curtas(["sol", "computador", "python", "mar"], 6)
+    print(palavras_curtas)
 
