@@ -60,7 +60,16 @@ def filtrar_palavras_curtas(palavras: lista, tamanho_maximo: int):
             filtro.append(palavra) 
     return filtro        
 
+def separar_pares_impares(numeros: list):
+    pares = 0 
+    impares = 0
+    for numero in numeros:
+        if numero % 2 != 0:
+            pares+=1 
+        else: 
+            impares+=1    
 
+    return f"Pares: {pares} | Ímpares: {impares}"  
 
 
 
@@ -98,4 +107,10 @@ if __name__=="__main__":
 
     palavras_curtas = filtrar_palavras_curtas(["sol", "computador", "python", "mar"], 6)
     print(palavras_curtas)
+
+    pares = separar_pares_impares([1, 2, 3, 4, 5])
+    print(pares)
+
+
+
 

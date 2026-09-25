@@ -33,7 +33,7 @@ def calcular_resultado(nota1:int, nota2:int):
     else:
         return "reprovado"
 
-
+def maior_de_dois()
 
 
 

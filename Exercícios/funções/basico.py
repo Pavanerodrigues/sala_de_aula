@@ -22,6 +22,21 @@ def resumo_juros_compostos(capital:float, taxa:float, anos:int):
     M = capital *(1+taxa/100)**anos
     return f"Após{anos} anos,R$ {capital}, cresce para R${M:.2f}"
 
+def metricas_cilindro(raio:float, altura:float):
+    pi = 3.14159
+    volume = pi*(raio**2)*altura
+    area_superficie = 2*pi*raio*(raio + altura)
+
+    return f"Volume do cilindro: {volume:.2f} | Área de superficie: {area_superficie:.2f}"
+
+
+
+
+
+
+
+
+
 
 
 
@@ -30,6 +45,7 @@ def resumo_juros_compostos(capital:float, taxa:float, anos:int):
 if __name__ == '__main__':
     variavel = formatar_saudacao("Alice", "Porto Alegre")
     print(variavel)
+
     perimetro = calcular_perimetro(altura=10, largura=5)
     print(f"2 - {perimetro}")
 
@@ -44,3 +60,6 @@ if __name__ == '__main__':
 
     resumo = resumo_juros_compostos(1000.0, 5.0, 3)
     print(f"6 - {resumo}")
+
+    resumo = metricas_cilindro(2.0, 5.0)
+    print(f"7 - {resumo}")
