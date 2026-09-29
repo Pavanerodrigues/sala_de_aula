@@ -23,7 +23,8 @@ def filtrar_aprovados(notas_alunos:dict):
     
     return aprovados
                       
-                      
+ 
+ def tuplas_para_dicionario(lista_tuplas):                     
                       
                       
                       

@@ -10,8 +10,11 @@ class Cachorro:
         self.idade = idade  
 
     def latir(self):
-        print(f"Au au!")                      
- 
+        print(f"Au au! O {self.nome} está latindo.")
+
+
+cachorro = Cachorro("totó", "vira-lata", 2)
+cachorro.latir()
 
 
 
