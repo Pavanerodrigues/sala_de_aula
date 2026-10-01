@@ -84,6 +84,11 @@ def separar_pares_impares(numeros: list):
 
 
 
+
+
+
+
+
 if __name__=="__main__":
     dobrar([1,2,3,4,5])
     

@@ -41,9 +41,33 @@ def maior_de_dois(a:int, b: int):
     else:
         return "São iguais"
         
-def calcular_desconto(valor_compra: int, cliente_vip: int):
-    if cliente_vip
+def calcular_desconto(valor_compra:float, cliente_vip:bool):
+     if cliente_vip or valor_compra > 200:
+        return "desconto = 15%"
+     
+     else: 
+         return "desconto = 5%"
 
+
+
+
+
+
+def conceito_nota(nota:float):
+    if nota >= 9 and nota < 10:
+        return "A"
+    if nota >= 7 and nota < 9:
+        return "B" 
+    if nota > 5 and nota < 7:
+        return "C"
+    else:
+        return "F"
+    
+      
+    
+         
+         
+ 
 
 
 
@@ -77,7 +101,15 @@ if __name__ =="__main__":
     iguais = maior_de_dois(5, 5)
     print(f"5- {iguais}")
 
+    true = calcular_desconto(150.0, True) 
+    print(f"6- {true}")
+    false = calcular_desconto(100.0, False)
+    print(f"6- {false}")
 
+    B = conceito_nota(8.5) 
+    print(f"7- {B}")
+    F = conceito_nota(4.2)
+    print(f"7- {F}")
 
 
 
