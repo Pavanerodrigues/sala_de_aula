@@ -1,5 +1,5 @@
 class Bicicleta:
 
     aro: 36
-    giros:  2
+    giros: 50
     

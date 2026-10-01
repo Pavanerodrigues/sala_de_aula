@@ -33,7 +33,23 @@ def calcular_resultado(nota1:int, nota2:int):
     else:
         return "reprovado"
 
-def maior_de_dois()
+def maior_de_dois(a:int, b: int):
+    if a > b:
+        return "O primeiro é maior"
+    elif b > a:
+        return "O segundo é maior"
+    else:
+        return "São iguais"
+        
+def calcular_desconto(valor_compra: int, cliente_vip: int):
+    if cliente_vip
+
+
+
+
+
+
+
 
 
 
@@ -55,3 +71,17 @@ if __name__ =="__main__":
     
     aprovado = calcular_resultado(8.0, 6.0)
     print(f"4- {aprovado}")
+
+    maior = maior_de_dois(10, 20)
+    print(f"5- {maior}")
+    iguais = maior_de_dois(5, 5)
+    print(f"5- {iguais}")
+
+
+
+
+
+
+
+
+
