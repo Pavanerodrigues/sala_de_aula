@@ -28,6 +28,26 @@ CREATE TABLE IF NOT EXISTS produto (
     quantidade_disponivel INTEGER
 );
 
+ALTER TABLE encomenda
+    ADD COLUMN IF NOT EXISTS id_cliente INTEGER;
+	
+ALTER TABLE encomenda
+	ADD CONSTRAINT fk_id_cliente
+	    FOREIGN KEY (id_cliente)
+		REFERENCES cliente(id_cliente);
 
 
+ALTER TABLE item_encomenda
+    ADD COLUMN IF NOT EXISTS id_produto INTEGER,
+    ADD COLUMN IF NOT EXISTS id_encomenda INTEGER;
+
+ALTER TABLE item_encomenda
+	ADD CONSTRAINT fk_id_produto
+	    FOREIGN KEY (id_produto)
+	    REFERENCES produto(id_produto);
+
+ALTER TABLE item_encomenda
+	ADD CONSTRAINT fk_id_encomenda
+	    FOREIGN KEY (id_encomenda)
+		REFERENCES encomenda(id_encomenda);
 
