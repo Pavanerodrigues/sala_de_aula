@@ -1,8 +1,8 @@
 CREATE TABLE IF NOT EXISTS cliente (
 	id_cliente SERIAL PRIMARY KEY, 
-	nome VARCHAR(100)NOT NULL,
-	telefone VARCHAR(20)NOT NULL, 
-	email VARCHAR(120), 
+	nome VARCHAR(100) NOT NULL,
+	telefone VARCHAR(20) UNIQUE NOT NULL, 
+	email VARCHAR(120) UNIQUE, 
 	tipo VARCHAR (50)
 );
 
@@ -50,4 +50,10 @@ ALTER TABLE item_encomenda
 	ADD CONSTRAINT fk_id_encomenda
 	    FOREIGN KEY (id_encomenda)
 		REFERENCES encomenda(id_encomenda);
+
+ALTER TABLE cliente
+	ADD	UNIQUE(email)
+
+ALTER TABLE cliente
+	ADD	UNIQUE(telefone)
 
