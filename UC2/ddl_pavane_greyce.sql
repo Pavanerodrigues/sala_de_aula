@@ -52,8 +52,8 @@ ALTER TABLE item_encomenda
 		REFERENCES encomenda(id_encomenda);
 
 ALTER TABLE cliente
-	ADD	UNIQUE(email)
+	ADD	UNIQUE(email);
 
 ALTER TABLE cliente
-	ADD	UNIQUE(telefone)
+	ADD	UNIQUE(telefone);
 
