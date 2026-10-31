@@ -57,10 +57,3 @@ ALTER TABLE cliente
 ALTER TABLE cliente
 	ADD	UNIQUE(telefone);
 
-SELECT * FROM cliente
-
-SELECT * FROM id_produto
-
-SELECT * FROM produto
-
-SELECT * FROM produto
