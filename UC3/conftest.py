@@ -9,12 +9,15 @@
 import psycopg2 as pg
 import pytest
 
+from config_local import SENHA
+ 
+
 BANCO_DE_TESTE = {
     "host": "localhost",
     "port": 5432,
     "dbname": "locadora_teste",  # NUNCA o banco com os dados do projeto
     "user": "postgres",
-    "password": "postgres",
+    "password": SENHA,
 }
 
 
