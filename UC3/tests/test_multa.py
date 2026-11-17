@@ -1,5 +1,5 @@
 def multa(dias_atraso):
-    if dias_atraso>=3
+    if dias_atraso>=3:
        return dias_atraso * 6.00
     
     return 0.0
