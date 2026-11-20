@@ -35,10 +35,6 @@ class RelatorioDoMes:
         self.tres_maiores = [valores[i] for i in range(3)]
 
 
-
-
-
-
 def total_do_cliente(alugueis, cliente):
     """Quanto um cliente gastou no mês, somando todos os aluguéis dele."""
     total = 0.0
@@ -51,12 +47,6 @@ def total_do_cliente(alugueis, cliente):
 def alugueis_com_valores(*valores):
     """Um aluguel para cada valor, na ordem dada."""
     return [Aluguel("Ana", "FIFA 25", valor) for valor in valores]
-
-
-
-
-
-
 
 # O "teste" que todo mundo já faz: rodar e olhar o que sai na tela.
 if __name__ == "__main__":
@@ -71,4 +61,13 @@ if __name__ == "__main__":
     print(relatorio.menor)  # 25.0
 
 
+def avaliar(self, alugueis):
+    for aluguel in alugueis:
+        if aluguel.valor > self.maior:
+            self.maior = aluguel.valor
 
+        if aluguel.valor < self.menor:
+            self.menor = aluguel.valor
+
+    valores = sorted([a.valor for a in alugueis], reverse=True)
+    self.tres_maiores = [valores[i] for i in range(3)]
